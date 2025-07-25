@@ -10,7 +10,7 @@ chatWindow.innerHTML = `<div class="msg ai">👋 Hello! How can I help you today
 const SYSTEM_PROMPT = {
   role: "system",
   content:
-    "You are a helpful assistant specializing in L’Oréal products, routines, and recommendations. Only answer questions related to L’Oréal and its offerings.",
+    "You are a helpful assistant specializing in L’Oréal products, routines, recommendations, and beauty-related topics. If a user asks a question unrelated to these topics, politely refuse to answer and guide them back to relevant topics.",
 };
 
 /* Handle form submit */

@@ -57,30 +57,56 @@ body {
 
 .chat-window {
   height: 360px;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   padding: 20px;
-  font-size: 18px;
-  font-weight: 400; /* Revert to regular weight */
+  font-size: 16px;
   line-height: 1.5;
   overflow-y: auto;
-  background: #fafafa;
+  background: #f9f9f9;
   white-space: pre-line;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between messages */
 }
 
-/* messages */
+/* Message bubbles */
 .msg {
-  margin-bottom: 14px;
-  line-height: 1.5;
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
 }
 
+/* User message bubble */
 .msg.user {
-  color: #000;
-  font-weight: 400; /* Revert to regular weight */
+  align-self: flex-end;
+  background-color: #000; /* Black background for user messages */
+  color: #fff; /* White text for contrast */
+  border-bottom-right-radius: 0;
 }
 
+/* Assistant message bubble */
 .msg.ai {
-  color: #666666;
-  font-weight: 400; /* Revert to regular weight */
+  align-self: flex-start;
+  background-color: #e5e5e5;
+  color: #333;
+  border-bottom-left-radius: 0;
+}
+
+/* Scrollbar styling for chat window */
+.chat-window::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.chat-window::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
 }
 
 /* input row */
