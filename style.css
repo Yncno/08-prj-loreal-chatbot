@@ -7,7 +7,7 @@
 
 /* —— body + fonts —— */
 body {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif; /* Revert to Montserrat */
   color: #333;
   display: flex;
   justify-content: center;
@@ -21,13 +21,33 @@ body {
 /* header */
 .site-header {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 13px; /* Increase space by 20% (from 11px to 13px) */
 }
 
 .site-title {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 500; /* Revert to medium weight */
   margin-bottom: 10px;
+}
+
+/* Center the logo, make it half the size, and increase top spacing */
+.logo-container {
+  text-align: center; /* Center the logo horizontally */
+  padding-top: 80px; /* Further increase space from the top of the page */
+}
+
+.logo {
+  width: 50%; /* Default size: half the container width */
+  max-width: 240px; /* Reduce the maximum size by 20% (from 300px to 240px) */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Make the header 15% smaller */
+.main-header {
+  font-size: 85%;
+  font-weight: 500; /* Revert to medium weight */
+  text-align: center;
+  margin-top: 10px;
 }
 
 /* chat window */
@@ -40,6 +60,7 @@ body {
   border: 1px solid #000;
   padding: 20px;
   font-size: 18px;
+  font-weight: 400; /* Revert to regular weight */
   line-height: 1.5;
   overflow-y: auto;
   background: #fafafa;
@@ -54,10 +75,12 @@ body {
 
 .msg.user {
   color: #000;
+  font-weight: 400; /* Revert to regular weight */
 }
 
 .msg.ai {
   color: #666666;
+  font-weight: 400; /* Revert to regular weight */
 }
 
 /* input row */
@@ -72,15 +95,17 @@ body {
   padding: 12px;
   border: 1px solid #ccc;
   font-size: 18px;
+  font-weight: 400; /* Revert to regular weight */
 }
 
 .chat-form input:focus {
-  outline: 2px solid #000;
+  outline: 2px solid gold !important; /* Set the outline thickness back to 2px */
   outline-offset: 2px;
 }
 
 .chat-form button {
   font-size: 18px;
+  font-weight: 400; /* Revert to regular weight */
   background: #000;
   color: #fff;
   border: none;
@@ -125,6 +150,7 @@ body {
   margin: 60px 0 40px;
   text-align: center;
   font-size: 14px;
+  font-weight: 400; /* Revert to regular weight */
   color: #666;
 }
 
